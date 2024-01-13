@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:#034e18b5;
+  }
+  
+  .loader-wrapper {
+    text-align: center;
+  }
+  
+  .loader {
+    border: 8px solid #3498db;
+    border-top: 8px solid #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Adicionado a propriedade animation aqui */
+    margin: auto;
+  }
+  
+  .loading-text {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #f2eaea;
+    font-family: Arial, sans-serif;
+    
+
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

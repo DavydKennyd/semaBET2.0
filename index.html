@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SemaBET</title>
+    <link href="style-index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="script-loading.js"></script>
+</head>
+
+<body class="bg-success p-2 text-dark bg-opacity-75" onload="verificarIndex()">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-success py-0" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-left" href="index.html">
+                <img src="https://cdn.glitch.global/0d38555e-3f2b-4f1e-9b6e-19435034db9f/logo_transparent.png?v=1694919319870"
+                    alt="logo_semabet" id="logonavbar" class="image-responsive d-inline-block align-top" width="100"
+                    height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active px-4 fs-4" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 fs-4" href="loading.html">Perfil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-4 fs-4" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Esportes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="pagefut.html">Futebol</a></li>
+                            <li><a class="dropdown-item" href="#">Futsal</a></li>
+                            <li><a class="dropdown-item" href="#">Vôlei</a></li>
+                            <li><a class="dropdown-item" href="#">Basquete</a></li>
+                            <li><a class="dropdown-item" href="#">Handebol</a></li>
+                            <li><a class="dropdown-item" href="#">Queimada</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Tabela Geral</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled px-2 fs-4" aria-disabled="true">Depósito</a>
+                    </li>
+                </ul>
+                <a href="login.html">
+                    <button class="button px-4 mx-5" id="loginbutton">
+                        LOGIN
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="carrouselHeight">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://cdn.glitch.global/0d38555e-3f2b-4f1e-9b6e-19435034db9f/s1.JPG?v=1694917577883"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.glitch.global/0d38555e-3f2b-4f1e-9b6e-19435034db9f/s3.JPG?v=1694917580063"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://cdn.glitch.global/0d38555e-3f2b-4f1e-9b6e-19435034db9f/s4.JPG?v=1694917581921"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container px-4 text-center">
+        <div class="row gx-5 ">
+            <div class="col" id="resultados">
+                <div class="p-3 fs-4"><a class="namelink" href="#">RESULTADOS</a></div>
+            </div>
+            <div class="col" id="destaques">
+                <div class="p-3 fs-4"><a class="namelink" href="#">ATLETAS DESTAQUES</a></div>
+            </div>
+            <div class="col" id="medalhas">
+                <div class="p-3 fs-4"><a class="namelink" href="#">QUADRO DE MEDALHAS</a></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="quadro_odds">
+        <h1 class="text-center text-white">
+            Quadro de Apostas
+        </h1>
+        <div class="container md">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bg-success-subtle fs-4 text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Futsal
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> TSI (2.25)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> Quimica(1.55)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+
+                                <hr>
+                                <!-- Divisão -->
+
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> Alimentos Vesp. (1.85)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> Informática(2.65)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+
+                                <hr>
+                                <!-- Divisão -->
+
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> Alimentos Mat. (3.05)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> MSI (2.95)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogos Volei -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-success-subtle fs-4 text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Vôlei
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> Quimica (2.25)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> Sup. de Alimentos(1.55)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+
+                                <hr>
+                                <!-- Divisão -->
+
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> Alimentos Vesp. (1.85)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> MSI(2.65)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+
+                                <hr>
+                                <!-- Divisão -->
+
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> Servidores (100.05)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> TSI (1.15)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jogos Basquete -->
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-success-subtle fs-4 text" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Basquete
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> TSI (1.25)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> Superior de Alimentos(20.55)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+
+                                <hr>
+                                <!-- Divisão -->
+
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> Alimentos Vesp. (2.85)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> MSI(2.05)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+
+                                <hr>
+                                <!-- Divisão -->
+
+                                <li class="list-group-item d-flex flex-column mb-3">
+                                    <div>
+                                        <input type="radio" name="aposta"> Alimentos Mat. (3.05)
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="aposta" id=""> Informática (1.95)
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">R$</span>
+                                        <input type="text" class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places) ">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="button-addon2">Apostar</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

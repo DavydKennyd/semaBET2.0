@@ -1,0 +1,413 @@
+html {
+    background-image:url(https://cdn.glitch.global/0d38555e-3f2b-4f1e-9b6e-19435034db9f/ifcn.jpg?v=1695926032524);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#nav-search:hover {
+    color: black;
+}
+
+.carrouselHeight {
+  margin-top: 100px;
+  }
+
+#loginbutton {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #034e18b5;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+      
+#loginbutton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #015801 0%, #ffffff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+      
+#loginbutton::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #015801 0%, #ffffff 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+      
+#loginbutton:hover::after {
+    filter: blur(30px);
+}
+    
+#loginbutton:hover::before {
+    transform: rotate(-180deg);
+}
+    
+#loginbutton:active::before {
+    scale: 0.7;
+}      
+
+
+
+.carrouselHeight {
+    width: auto;
+    max-width: 300vw;
+}
+
+#container {
+    margin-top: 5%;
+}
+
+#row {
+    display: inline-block;
+
+}
+
+.col {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.col:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#resultados{
+    border: 1px solid black;
+    border-radius: 10px 20px;
+    height: 150px;
+    margin-top: 15%;
+    font-size: 25px;
+    line-height: 100px;
+    margin-bottom: 150px;
+    background-image:  linear-gradient(to bottom right,#015801, #034e18b5);
+    color: white;
+}
+
+#destaques {
+    border: 1px solid black;
+    border-radius: 10px 20px;
+    height: 150px;
+    margin-top: 15%;
+    font-size: 25px;
+    line-height: 100px;
+    margin-bottom: 150px;
+    background-image:  linear-gradient(to bottom right,#015801, #034e18b5);
+    color: white;
+}
+
+#medalhas {
+    border: 1px solid black;
+    border-radius: 10px 20px;
+    height: 150px; 
+    margin-top: 15%;
+    font-size: 25px;
+    line-height: 60px;
+    margin-bottom: 150px;
+    background-image:  linear-gradient(to bottom right,#015801, #034e18b5);
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+   }
+
+a:hover {
+    color: aliceblue;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+/*Odds E Apostas*/
+#quadro_de_odds{
+    display: flex;
+    background-color: transparent;
+    padding:50px;
+    border-radius:20px;
+}
+#divisoria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 70%;
+}
+#divisoria2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 30%;
+}
+#pre_jogo{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+}
+#pre_jogo input{
+  width: 350px;
+  border-radius:30px;
+  border:transparent;
+  padding-left:10px;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#buttons button{
+    margin-bottom: 5px;
+    background-color:#32936d;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    border: transparent;
+    border-bottom: 1px solid white;
+}
+/* Futsal */
+#jogos_ocorrendo{
+    display: block;
+    /* background-color: #004e2e; */
+    width: 70%;
+    height: auto;
+}
+#jogos_ocorrendo ul li{
+    display: flex;
+    width: 700px;;
+    justify-content: space-between;
+    background-color: #32936d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+#jogos_ocorrendo li div{
+    display: flex;
+    margin-left: 18px;
+    width: 150px;
+    overflow: hidden;
+}
+#jogos_ocorrendo input{
+    width: 70px;
+    padding-left: 5px;
+    border-radius: 30px;
+    border: none;
+    height: 20px;
+}
+/* Volei */
+#jogos_volei{
+    display: none;
+    /* background-color: #004e2e; */
+    width: 70%;
+    height: auto;
+}
+#jogos_volei ul li{
+    display: flex;
+    width: 700px;;
+    justify-content: space-between;
+    background-color: #32936d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+#jogos_volei li div{
+    display: flex;
+    margin-left: 18px;
+    width: 150px;
+    overflow: hidden;
+}
+#jogos_volei input{
+    width: 70px;
+    padding-left: 5px;
+    border-radius: 30px;
+    border: none;
+    height: 20px;
+}
+/* Basquete */
+#jogos_basquete{
+    display: none;
+    /* background-color: #004e2e; */
+    width: 70%;
+    height: auto;
+}
+#jogos_basquete ul li{
+    display: flex;
+    width: 700px;;
+    justify-content: space-between;
+    background-color: #32936d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+#jogos_basquete li div{
+    display: flex;
+    margin-left: 18px;
+    width: 150px;
+    overflow: hidden;
+}
+#jogos_basquete input{
+    width: 70px;
+    padding-left: 5px;
+    border-radius: 30px;
+    border: none;
+    height: 20px;
+}
+/* Natação */
+#natacao{
+    display: none;
+  /* background-color: #903f8d; */
+    width: 70%;
+    height: auto;
+}
+#natacao ul li{
+    display: flex;
+    width: 700px;;
+    justify-content: space-between;
+    background-color: #32936d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+#natacao li div{
+    display: flex;
+    margin-left: 18px;
+    width: 150px;
+    overflow: hidden;
+}
+#natacao input{
+    width: 70px;
+    padding-left: 5px;
+    border-radius: 30px;
+    border: none;
+    height: 20px;
+}
+/* ATLETISMO */
+
+#atletismo{
+    display: none;
+    /* background-color: #004e2e; */
+    width: 70%;
+    height: auto;
+}
+#atletismo ul li{
+    display: flex;
+    width: 700px;;
+    justify-content: space-between;
+    background-color: #32936d;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+#atletismo li div{
+    display: flex;
+    margin-left: 18px;
+    width: 150px;
+    overflow: hidden;
+}
+#atletismo input{
+    width: 70px;
+    padding-left: 5px;
+    border-radius: 30px;
+    border: none;
+    height: 20px;
+}
+/* Odds */
+.odd{
+    text-align: center;
+    align-items: center;
+    background-color: #133510;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+}
+/* TITULO DAS APOSTAS */
+.titulo_jogos{
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.li_title{
+    height: 60px;
+}
+/* RESPONSIVIDADE CELULARES */
+@media screen and (max-width:767px){
+    body {
+        font-size: 18px; /* Altere o tamanho da fonte de acordo com suas necessidades */
+        background-color: #1cc356;
+    }
+    #quadro_de_odds {
+        display: flex;
+        flex-direction: column; /* Altere para column para um layout mais amigável para dispositivos móveis */
+    }
+    #divisoria, #divisoria2 {
+        width: 100%; /* Para ocupar toda a largura do dispositivo móvel */
+    }
+    #jogos_ocorrendo ul li, #jogos_volei ul li, #jogos_basquete ul li, #natacao ul li, #atletismo ul li {
+        width: 120%; /* Para ocupar toda a largura do dispositivo móvel */
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    
+    }
+    .li_title{
+        height: 50px;
+    }
+    #jogos_ocorrendo ul li div, #jogos_volei ul li div, #jogos_basquete ul li div, #natacao ul li div, #atletismo ul li div{
+        margin-bottom: 6px;
+        text-align: center;
+        align-items: center;
+    }
+    #buttons button {
+        margin-bottom: 10px; /* Aumentei a margem inferior para melhorar o espaçamento em dispositivos móveis */
+    }
+    #pre_jogo, .odd {
+        padding: 10px 5px; /* Reduzi o padding para economizar espaço em dispositivos móveis */
+    }
+    #pre_jogo{
+        background-color:#1c7f12;
+        border-radius: 20px;
+        padding: 20px;
+    }
+  #pre_jogo input{
+    width: 250px;
+  }
+    .titulo_jogos {
+        font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário para dispositivos móveis */
+    }                            
+}
+

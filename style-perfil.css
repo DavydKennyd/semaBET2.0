@@ -1,0 +1,332 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #corpo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: -8px;
+    padding: 0;
+    bottom: 0;
+  }
+  #tela_de_info {
+    position: absolute;
+    height: 74%;
+    width: 25%;
+    top: 20%;
+    left: 1%;
+    background-color: whitesmoke;
+  }
+  
+  #user_perfil {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    border-bottom: 1px solid #d1d7db;
+    border-top: 1px solid #d1d7db;
+  }
+  #user_name {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: x-large;
+    margin: 0;
+  }
+  #user_img {
+    position: absolute;
+    height: 48%;
+    width: 40%;
+    left: 30%;
+    top: 15%;
+  }
+  #user_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+  #trocar_foto {
+      padding: 0;
+      position: absolute;
+      width: 96%;
+      height: 12%;
+      top: 70%;
+      left: 2%;
+      text-align: center;
+      border-color: lightslategray;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  #editar_perfil {
+      padding: 0;
+      position: absolute;
+      width: 96%;
+      height: 12%;
+      top: 85%;
+      left: 2%;
+      text-align: center;
+      border-color: lightslategray;
+      border: none;
+      border-radius: 2px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      background-color: rgb(26,115,232);
+      color: white;
+  }
+  #user_info {
+      position: absolute;
+      border-top: 1px solid #d1d7db;
+      border-bottom: 1px solid #d1d7db;
+      bottom: 0%;
+      height: 38%;
+      width: 100%;
+  }
+  .user_dados {
+      /* background-color: aquamarine; */
+      margin: 1%;
+  }
+  #tela_de_saldo {
+    position: absolute;
+    background-color: whitesmoke;
+    height: 15%;
+    width: 25%;
+    top: 20%;
+    left: 28%;
+  }
+  #saldo {
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    left: 0;
+    border: 1px solid gray;
+    border-right: 0.5px;
+  }
+  #saldo_saque {
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    left: 33.33%;
+    border: 1px solid gray;
+    border-right: 0.5px;
+  }
+  #apostas_em_aberto {
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    left: 66.66%;
+    border: 1px solid gray;
+  }
+  .tela_de_saldo_top {
+    text-align: center;
+    font-size: medium;
+  }
+  .tela_de_saldo_numeros {
+    text-align: center;
+    font-size: large;
+    color: green;
+  }
+  .tela_de_saldo_textos {
+    text-align: center;
+    font-size: x-small;
+  }
+  .tela_de_saldo_textos, .tela_de_saldo_numeros, .tela_de_saldo_top {
+    margin: 2%;
+    font-weight: bold;
+  }
+  #historico_apostas {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 44%;
+    height: 74%;
+    right: 1%;
+    top: 20%;
+  }
+  #historico_de_apostas {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: forestgreen;
+  }
+  #historico_de_apostas p {
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    top: 11%;
+    width: 96%;
+    left: 2%;
+    color: white;
+  }
+  #historico_header {
+    position: absolute;
+    top: 10%;
+    width: 96%;
+    height: 10%;
+    left: 2%;
+    border-bottom: 2px solid gray;
+  }
+  #historico_header p {
+    text-align: center;
+  }
+  #historico_jogo {
+    position: absolute;
+    left: 0;
+    width: 52%;
+    height: 100%;
+    bottom: 0;
+  }
+  #historico_data {
+    position: absolute;
+    width: 16%;
+    height: 100%;
+    left: 52%;
+    bottom: 0;
+  }
+  #historico_valor {
+    position: absolute;
+    width: 16%;
+    height: 100%;
+    left: 68%;
+    bottom: 0;
+  }
+  #historico_jogo_info {
+    position: absolute;
+    width: 16%;
+    height: 100%;
+    left: 84%;
+    bottom: 0;
+  }
+  #historico_jogo p, #historico_data p, #historico_valor p, #historico_jogo_info p {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    top: 30%;
+    position: absolute;
+    text-align: center;
+  }
+  #tela_jogos {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    width: 96%;
+    left: 2%;
+  }
+  #jogos {
+    position: absolute;
+    width: 52%;
+    height: 100%;
+    bottom: 0;
+  }
+  .descricao_jogos {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+  .descricao_jogos p {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    top: 22%;
+    position: absolute;
+    text-align: center;
+  }
+  #jogo2 {
+    top: 10%;
+  }
+  #data {
+    position: absolute;
+    height: 100%;
+    width: 16%;
+    bottom: 0;
+    left: 52%;
+  }
+  #data_jogo1 {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    top: 0;
+  }
+  #data_jogo2 {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    top: 10%;
+    border-bottom: 1px solid gray;
+  }
+  #data_jogo1 p, #data_jogo2 p, #valor_jogo1 p, #valor_jogo2 p, #resultado_jogo1 p, #resultado_jogo2 p {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    top: 22%;
+    position: absolute;
+    text-align: center;
+  }
+  #valor {
+    position: absolute;
+    height: 100%;
+    width: 16%;
+    bottom: 0%;
+    left: 68%;
+  }
+  #valor_jogo1 {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    top: 0;
+  }
+  #valor_jogo2 {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    top: 10%;
+  }
+  #resultados {
+    position: absolute;
+    height: 100%;
+    width: 16%;
+    bottom: 0%;
+    left: 84%;
+  }
+  #resultado_jogo1 {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    top: 0%;
+  }
+  #resultado_jogo1 p{
+    background-color: red;
+    color: white;
+    border-radius: 200px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  #resultado_jogo2 {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    top: 10%;
+  }
+  #resultado_jogo2 p {
+    background-color: green;
+    color: white;
+    border-radius: 200px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }

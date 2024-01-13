@@ -1,0 +1,135 @@
+html {
+    background-image:url(https://cdn.glitch.global/0d38555e-3f2b-4f1e-9b6e-19435034db9f/ifcn.jpg?v=1695926032524);
+    background-position: center;
+}
+
+
+body {
+            font-family: Arial, sans-serif;
+            background-color: #034e18b5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+.container_cadastro{
+        background-color: #034e18b5;
+        color: white !important;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 400px; 
+        position: absolute;
+        top: 23%;
+        
+        }
+    
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            width: 200px;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        button {
+            appearance: button;
+            background-color: #18d62e;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            line-height: 20px;
+            margin: 0;
+            outline: none;
+            overflow: visible;
+            padding: 13px 19px;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transform: translateZ(0);
+            transition: filter .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+           }
+           
+           button:after {
+            background-clip: padding-box;
+            background-color: #079b2a;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            bottom: -4px;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+           }
+           
+           button:main, button:focus {
+            user-select: auto;
+           }
+           
+           button:hover:not(:disabled) {
+            filter: brightness(1.1);
+           }
+           
+           button:disabled {
+            cursor: auto;
+           }
+           
+           button:active:after {
+            border-width: 0 0 0px;
+           }
+           
+           button:active {
+            padding-bottom: 10px;
+           }
+
+#divBotaoVoltar {
+    padding-top: 10px;
+}
+
+#divBotaoVoltar button{
+    width: 100%;
+}
+    
